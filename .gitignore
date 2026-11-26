@@ -1,0 +1,60 @@
+# --- Secretos y variables de entorno ---
+.env
+*.env
+.env.*
+!.env.example
+
+# --- Entornos virtuales y caché de Python ---
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# --- Datos personales, respaldos y registros de herramientas (Seguridad Fase 0) ---
+Files.txt
+filesPy.txt
+PyWhatKit_DB.txt
+logs/
+*.log
+
+# --- Bases de datos locales y Memoria Cognitiva SQLite ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# --- Capturas de pantalla temporales (Gemini Vision) y audios ---
+*.png
+*.jpg
+*.jpeg
+*.wav
+*.mp3
+# Excepción: permitir recursos gráficos estáticos de la interfaz React
+!hud_ui/src/assets/**
+!hud_ui/public/**
+
+# --- Dependencias y compilación del Frontend (React / Vite) ---
+hud_ui/node_modules/
+hud_ui/dist/
+node_modules/
+dist/
+.vscode/
+.DS_Store
+
+# Archivos privados de desarrollo e integraciones
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+*.sqlite*-wal
+*.sqlite*-shm
+*.db-wal
+*.db-shm
+*.tmp
+calendar_tasks.json
